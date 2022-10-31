@@ -15,7 +15,7 @@ local games = {
 for ids, url in next, games do
     if table.find(ids, game.PlaceId) then
         loadstring(game:HttpGet(url))(); break
-    else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/Universal/Script.lua"))(); break
     end
 end
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/Universal/Script.lua"))()
