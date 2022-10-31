@@ -14,11 +14,12 @@ local Window = Libraries.Vynixius:AddWindow({
 
 local LocalPlayerTab = Window:AddTab("LocalPlayer", {default = true})
 local GunTab = Window:AddTab("Gun", {default = false})
-local SettingsTab = Window:AddTab("Settings", {default = false})
+local ExtraTab = Window:AddTab("Extra", {default = false})
 
 local LocalPlayerMainSection = LocalPlayerTab:AddSection("Main", {default = false})
 local GunMainSection = GunTab:AddSection("Main", {default = false})
-local SettingsMainSection = SettingsTab:AddSection("Main", {default = false})
+local ExtraCreditsSection = ExtraTab:AddSection("Credits", {default = true})
+local ExtraMainSection = ExtraTab:AddSection("Main", {default = false})
 
 -- Services
 
@@ -65,8 +66,13 @@ local GunModDropdown = GunMainSection:AddDropdown("Apply Gun Modifications", {"M
     end
 end)
 
--- Settings Tab
+-- Extra Tab
 
-local windowKeyBind = SettingsMainSection:AddBind("Toggle UI Key", "None", {}, function(value)
+ExtraCreditsSection:AddDualLabel({
+    "Scripting",
+    "xshad0xx|Masu|EgypticMoon"
+})
+
+local windowKeyBind = ExtraMainSection:AddBind("Toggle UI Key", "None", {}, function(value)
     Window:SetKey(value)
 end)

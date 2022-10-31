@@ -15,12 +15,13 @@ local Window = Libraries.Vynixius:AddWindow({
 local LocalPlayerTab = Window:AddTab("LocalPlayer", {default = true})
 local FarmTab = Window:AddTab("Farm", {default = false})
 local OtherTab = Window:AddTab("Other", {default = false})
-local SettingsTab = Window:AddTab("Settings", {default = false})
+local ExtraTab = Window:AddTab("Extra", {default = false})
 
 local LocalPlayerMainSection = LocalPlayerTab:AddSection("Main", {default = false})
 local FarmMainSection = FarmTab:AddSection("Main", {default = false})
 local OtherMainSection = OtherTab:AddSection("Main", {default = false})
-local SettingsMainSection = SettingsTab:AddSection("Main", {default = false})
+local ExtraCreditsSection = ExtraTab:AddSection("Credits", {default = true})
+local ExtraMainSection = ExtraTab:AddSection("Main", {default = false})
 
 -- Services
 
@@ -96,8 +97,13 @@ local antiAFKToggle = OtherMainSection:AddToggle("AntiAFK", {default = false}, f
     end
 end)
 
--- Settings Tab
+-- Extra Tab
 
-local windowKeyBind = SettingsMainSection:AddBind("Toggle UI Key", "None", {}, function(value)
+ExtraCreditsSection:AddDualLabel({
+    "Scripting",
+    "xshad0xx|Masu|EgypticMoon"
+})
+
+local windowKeyBind = ExtraMainSection:AddBind("Toggle UI Key", "None", {}, function(value)
     Window:SetKey(value)
 end)
