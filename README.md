@@ -20,9 +20,13 @@ loadstring(
 
 ## Supported Games
 
-### - Prison Life (Cars fixed!)
-### - 🎃 Halloween 🎃Rock Simulator
+### Prison Life (Cars fixed!)
+### 🎃 Halloween 🎃Rock Simulator
 
 ### Information
 
 #### Loading The Script In Any Other Game That Is Not Supported Will Load The Universal Script!
+
+## Used UI Libraries
+
+### Vynixius UI Library - https://github.com/RegularVynixu/UI-Libraries/tree/main/Vynixius
