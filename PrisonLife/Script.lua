@@ -1,4 +1,8 @@
-local Libraries = loadstring(game:HttpGet("https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/Libraries.lua"))()
+local Libraries = {
+    Orion = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))(),
+    Vynixius = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/UI-Libraries/main/Vynixius/Source.lua"))(),
+    Venyx = loadstring(game:HttpGet("https://raw.githubusercontent.com/Stefanuk12/Venyx-UI-Library/main/source2.lua"))()
+}
 
 local Window = Libraries.Vynixius:AddWindow({
     title = {"Chroma Hub", "Prison Life"},
