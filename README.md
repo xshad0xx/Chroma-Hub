@@ -20,8 +20,8 @@ loadstring(
 
 ## Supported Games
 
-### Prison Life (Cars fixed!)
-### 🎃 Halloween 🎃Rock Simulator
+### • Prison Life (Cars fixed!)
+### • 🎃 Halloween 🎃Rock Simulator
 
 ### Information
 
@@ -29,4 +29,4 @@ loadstring(
 
 ## Used UI Libraries
 
-### Vynixius UI Library - https://github.com/RegularVynixu/UI-Libraries/tree/main/Vynixius
+### • Vynixius UI Library - https://github.com/RegularVynixu/UI-Libraries/tree/main/Vynixius
