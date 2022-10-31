@@ -1,3 +1,5 @@
+print("test")
+
 local Libraries = loadstring(game:HttpGet("https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/Libraries.lua"))()
 
 local Window = Libraries.Vynixius:AddWindow({
