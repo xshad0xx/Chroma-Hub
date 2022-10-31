@@ -9,8 +9,6 @@
 ### To Execute The Script You Will Have To Copy This Code Below!
 
 ```lua
-> This Is The Script To Execute The Loader Of Chroma Hub!
-
 loadstring(
   game:HttpGet(
     "https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/Loader.lua"
