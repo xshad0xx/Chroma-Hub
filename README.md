@@ -11,7 +11,7 @@
 ```lua
 loadstring(
   game:HttpGet(
-    "https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/Loader.lua"
+    "https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/Loadstring.lua"
   )
 )()
 ```
