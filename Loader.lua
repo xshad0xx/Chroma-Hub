@@ -9,7 +9,8 @@ until count == 3
 
 local games = {
     [{155615604}] = "https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/PrisonLife/Script.lua",
-    [{7187504655}] = "https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/RockSimulator/Script.lua"
+    [{7187504655}] = "https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/RockSimulator/Script.lua",
+    [{4893679160}] = "https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/BigBrainSim/Script.lua"
 }
 
 for ids, url in next, games do
