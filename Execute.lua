@@ -129,83 +129,83 @@ information.TextWrapped = true
 -- Scripts:
 
 local function DDYC_fake_script() -- close.LocalScript 
-	local script = Instance.new('LocalScript', close)
+local script = Instance.new('LocalScript', close)
 
-	local time = 0.3
-	local main = script.Parent.Parent.Parent.Parent.mainframe
-	
-	main.Visible = true
-	main.top.Visible = true
-	main.top:TweenSize(UDim2.new(0, 499, 0, 33), "InOut", "Linear", time)
-	wait(time)
-	main.background.Visible = true
-	main.background:TweenSize(UDim2.new(0, 500, 0, 350), "InOut", "Linear", time)
-	wait(time)
-	main.top.title.Visible = true
-	main.top.close.Visible = true
-	main.container.Visible = true
-	
-	script.Parent.MouseButton1Down:Connect(function()
-		if main.Visible == false then
-			main.Visible = true
-			main.top.Visible = true
-			main.top:TweenSize(UDim2.new(0, 499, 0, 33), "InOut", "Linear", time)
-			wait(time)
-			main.background.Visible = true
-			main.background:TweenSize(UDim2.new(0, 500, 0, 350), "InOut", "Linear", time)
-			wait(time)
-			main.top.title.Visible = true
-			main.top.close.Visible = true
-			main.container.Visible = true
-		else
-			main.container.Visible = false
-			main.top.title.Visible = false
-			main.top.close.Visible = false
-			main.background:TweenSize(UDim2.new(0, 500, 0, 0), "InOut", "Linear", time)
-			wait(time)
-			main.background.Visible = false
-			main.top:TweenSize(UDim2.new(0, 0, 0, 33), "InOut", "Linear", time)
-			wait(time)
-			main.top.Visible = false
-			main.Visible = false
-		end
-	end)
+local time = 0.3
+local main = script.Parent.Parent.Parent.Parent.mainframe
+
+main.Visible = true
+main.top.Visible = true
+main.top:TweenSize(UDim2.new(0, 499, 0, 33), "InOut", "Linear", time)
+wait(time)
+main.background.Visible = true
+main.background:TweenSize(UDim2.new(0, 500, 0, 350), "InOut", "Linear", time)
+wait(time)
+main.top.title.Visible = true
+main.top.close.Visible = true
+main.container.Visible = true
+
+script.Parent.MouseButton1Down:Connect(function()
+if main.Visible == false then
+main.Visible = true
+main.top.Visible = true
+main.top:TweenSize(UDim2.new(0, 499, 0, 33), "InOut", "Linear", time)
+wait(time)
+main.background.Visible = true
+main.background:TweenSize(UDim2.new(0, 500, 0, 350), "InOut", "Linear", time)
+wait(time)
+main.top.title.Visible = true
+main.top.close.Visible = true
+main.container.Visible = true
+else
+main.container.Visible = false
+main.top.title.Visible = false
+main.top.close.Visible = false
+main.background:TweenSize(UDim2.new(0, 500, 0, 0), "InOut", "Linear", time)
+wait(time)
+main.background.Visible = false
+main.top:TweenSize(UDim2.new(0, 0, 0, 33), "InOut", "Linear", time)
+wait(time)
+main.top.Visible = false
+main.Visible = false
+end
+end)
 end
 coroutine.wrap(DDYC_fake_script)()
 local function ZNOYF_fake_script() -- load.LocalScript 
-	local script = Instance.new('LocalScript', load)
+local script = Instance.new('LocalScript', load)
 
-	local time = 0.3
-	local main = script.Parent.Parent.Parent.Parent.mainframe
-	
-	script.Parent.MouseButton1Down:Connect(function()
-		if main.Visible == false then
-			main.Visible = true
-			main.top.Visible = true
-			main.top:TweenSize(UDim2.new(0, 499, 0, 33), "InOut", "Linear", time)
-			wait(time)
-			main.background.Visible = true
-			main.background:TweenSize(UDim2.new(0, 500, 0, 350), "InOut", "Linear", time)
-			wait(time)
-			main.top.title.Visible = true
-			main.top.close.Visible = true
-			main.container.Visible = true
-		else
-			main.container.Visible = false
-			main.top.title.Visible = false
-			main.top.close.Visible = false
-			main.background:TweenSize(UDim2.new(0, 500, 0, 0), "InOut", "Linear", time)
-			wait(time)
-			main.background.Visible = false
-			main.top:TweenSize(UDim2.new(0, 0, 0, 33), "InOut", "Linear", time)
-			wait(time)
-			main.top.Visible = false
-			main.Visible = false
-		end
-	
-		wait(time)
-	
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/Loader.lua"))()
-	end)
+local time = 0.3
+local main = script.Parent.Parent.Parent.Parent.mainframe
+
+script.Parent.MouseButton1Down:Connect(function()
+if main.Visible == false then
+main.Visible = true
+main.top.Visible = true
+main.top:TweenSize(UDim2.new(0, 499, 0, 33), "InOut", "Linear", time)
+wait(time)
+main.background.Visible = true
+main.background:TweenSize(UDim2.new(0, 500, 0, 350), "InOut", "Linear", time)
+wait(time)
+main.top.title.Visible = true
+main.top.close.Visible = true
+main.container.Visible = true
+else
+main.container.Visible = false
+main.top.title.Visible = false
+main.top.close.Visible = false
+main.background:TweenSize(UDim2.new(0, 500, 0, 0), "InOut", "Linear", time)
+wait(time)
+main.background.Visible = false
+main.top:TweenSize(UDim2.new(0, 0, 0, 33), "InOut", "Linear", time)
+wait(time)
+main.top.Visible = false
+main.Visible = false
+end
+
+wait(time)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/Loader.lua"))()
+end)
 end
 coroutine.wrap(ZNOYF_fake_script)()

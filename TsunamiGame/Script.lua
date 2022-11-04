@@ -20,9 +20,14 @@ local TeleportTab = Window.New({
     Title = "Teleport"
 })
 
+local ScriptsTab = Window.New({
+    Title = "Scripts"
+})
+
 local workspace = game.Workspace
 local plr = game.Players.LocalPlayer
 
+getgenv().farm = false
 getgenv().pickup = false
 
 PlayerTab.Slider({
@@ -62,6 +67,27 @@ AutoTab.Toggle({
     Enabled = false
 })
 
+AutoTab.Toggle({
+    Text = "Auto Farm",
+    Callback = function(value)
+        getgenv().farm = value
+
+        repeat
+            if getgenv().farm then
+                local tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(7),
+                {CFrame =CFrame.new(-9.4971323, 39.9823875, -1051.51807, 0.985789657, -0.00746125402, -0.16781877, -0.00396866864, 0.997699857,
+                -0.0676704049, 0.167937666, 0.0673748031, 0.983492553)})
+                tween:Play()
+                tween.Completed:Wait()
+                wait(1)
+                game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(0.88348788, 230.699554, 982.310242, -0.999389589,
+                -0.000123913429, 0.0349354483, -0.000140547054, 0.999999881, -0.000473669439, -0.034935385, -0.000478290371, -0.99938947)
+                wait(5)
+            end
+        until getgenv().farm == false
+    end
+})
+
 TeleportTab.Button({
     Text = "Researcher Room",
     Callback = function()
@@ -70,15 +96,22 @@ TeleportTab.Button({
 })
 
 TeleportTab.Button({
-    Text = "End",
-    Callback = function()
-        plr.Character:SetPrimaryPartCFrame(CFrame.new(-8, 45, -1021))
-    end
-})
-
-TeleportTab.Button({
     Text = "Spawn",
     Callback = function()
         plr.Character:SetPrimaryPartCFrame(CFrame.new(31, 123, 933))
+    end
+})
+
+ScriptsTab.Button({
+    Text = "Infinite Yield",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end
+})
+
+ScriptsTab.Button({
+    Text = "Unnamed ESP",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
     end
 })
