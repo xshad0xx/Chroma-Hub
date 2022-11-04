@@ -6,7 +6,7 @@
 
 ## How To Execute The Script?
 
-### To Execute The Script You Will Have To Copy This Code Below!
+#### To Execute The Script You Will Have To Copy This Code Below!
 
 ```lua
 loadstring(
@@ -16,7 +16,7 @@ loadstring(
 )()
 ```
 
-### Now Paste The Code Into A Script Executor And Execute It!
+#### Now Paste The Code Into A Script Executor And Execute It!
 
 ## Supported Games
 
