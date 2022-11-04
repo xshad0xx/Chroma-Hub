@@ -23,7 +23,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/m
 
 ### Information
 
-#### Loading The Script In Any Other Game That Is Not Supported Will Load The Universal Script!
+#### Loading The Script In Any Other Game That Is Not Supported Will Load The Universal Script! (Not Anymore Because Its Broken)
 
 ## Used UI Libraries
 
