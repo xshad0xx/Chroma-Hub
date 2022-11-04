@@ -22,6 +22,8 @@ loadstring(
 
 ### • Prison Life (Cars fixed!)
 ### • 🎃 Halloween 🎃Rock Simulator
+### • Tsunami Game
+### • Big Brain Simulator🧠
 
 ### Information
 
