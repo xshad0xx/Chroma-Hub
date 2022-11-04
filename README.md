@@ -9,11 +9,7 @@
 #### To Execute The Script You Will Have To Copy This Code Below!
 
 ```lua
-loadstring(
-  game:HttpGet(
-    "https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/Loadstring.lua"
-  )
-)()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/Loader.lua"))()
 ```
 
 #### Now Paste The Code Into A Script Executor And Execute It!
