@@ -14,10 +14,12 @@ local games = {
     [{7993293100}] = "https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/TsunamiGame/Script.lua"
 }
 
+local universal = "https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/Universal/Script.lua"
+
 for ids, url in next, games do
     if table.find(ids, game.PlaceId) then
         loadstring(game:HttpGet(url))(); break
-    else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/xshad0xx/Chroma-Hub/main/Universal/Script.lua"))()
+    --[[else
+        loadstring(game:HttpGet(universal))()]]
     end
 end
